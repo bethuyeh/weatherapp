@@ -1,0 +1,136 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   
+  .app{
+    min-height: 100vh;
+    margin-left: 40px;
+    margin-right: 40px;
+    transition: 0.4 ease-out;
+  }
+.app.cold{
+    margin: 0;
+    background: linear-gradient(to bottom, rgba(152, 227, 244, 0.2), rgba(2, 77, 117, 0.75)), url("Assets/coldy-city.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: 0.4 ease-out;
+    
+}
+
+.app.warm{
+    margin: 0;
+    background: url("./Assets/sunny-city.jpg");
+    background-size: cover;
+    background-position: unset;
+    
+}
+main{
+    margin: 0;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+.search-box{
+    width: 100%;
+    margin: 0 0 75px;
+    
+}
+
+.search-box input{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    appearance: none;
+    box-shadow: 1px 1px 3px 5px rgba(0, 0, 0, 0.2);
+    height: 80px;
+    font-size: 23px;
+    border-radius: 0px 0px 16px 16px;
+    margin-top: -25px;
+    
+}
+
+.search-box input:hover{
+    background: rgb(244, 252, 254);
+    color: rgb(1, 75, 112);
+    border: none;
+}
+
+.location-box{
+    text-align: center;
+    line-height: 2.8rem;
+}
+
+.location-box .location{
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px 2px;
+    color: aliceblue;
+    border: .2px solid rgba(240, 248, 255, 0.266);
+    padding: 15px;
+}
+
+.date{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(1, 29, 44);
+}
+
+.weather-box{
+    padding-top: 12px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    line-height: 2.8rem;
+
+}
+
+.weather-box .temperature{
+    position: relative;
+    display: inline-block;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.106);
+    padding: 48px 25px;
+    text-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+    font-size: 102px;
+    margin-top: 60px;
+    border-radius: 40px; 
+    
+}
+
+.weather{
+    position: relative;
+    display: inline-block;
+    padding: 12px;
+    font-size: 35px;
+    background-color: rgba(34, 31, 31, 0.264);
+    border-radius: 10px;
+    outline: black;
+    /* font-family: 'Ms Madi', cursive; */
+    /* font-family: 'Square Peg', cursive; */
+    
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+    .weather-change img{
+      max-width: 100%;
+      max-height: fit-content;
+       
+}
+
+    .weather-box .temperature{
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .search-box input{
+        font-size: 14px;
+        font-weight: 500;
+        min-width: 70%;
+    }
+}
