@@ -68,7 +68,7 @@ function App() {
               <div className='weather-change'> 
                 <div className="" style={{color: "#333", fontSize: "35px"}}>What's the Weather? </div> 
        
-                <img style={{float: "left", height: "500px"}}src={cartoonboy}/>
+                <img style={{float: "left", height: "500px"}}src={cartoonboy} alt="image-here"/>
             </div>
                 : ""
                 
